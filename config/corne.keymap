@@ -27,6 +27,13 @@
             bindings = <&kp LG(SPACE) &kp BACKSPACE &kp BACKSPACE &kp S &kp E &kp A &kp R &kp C &kp H &kp SPACE &kp V &kp S &kp ENTER>;
             label = "OPEN_VS_RECENT_CODE";
         };
+
+        file_change_vscode: file_change_vscode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(S)) &kp LC(LS(Z))>;
+            label = "FILE_CHANGE_VSCODE";
+        };
     };
 
     keymap {
@@ -42,7 +49,7 @@
             bindings = <
 &mt LC(ESCAPE) ESCAPE  &mt GRAVE Q  &kp W  &kp E             &kp R        &kp T        &kp Y    &kp U          &kp I      &kp O        &kp P              &to 0
 &kp TAB                &kp A        &kp S  &kp D             &kp F        &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI           &to 1
-&kp LSHFT              &mt CAPS Z   &kp X  &mt LG(C) C       &mt LC(V) V  &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &mt FSLH QUESTION  &to 2
+&kp LSHFT              &mt CAPS Z   &kp X  &mt LG(C) C       &mt LG(V) V  &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &mt FSLH QUESTION  &to 2
                                            &kp LEFT_CONTROL  &kp LGUI     &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
@@ -55,9 +62,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE        &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2  &none            &none          &none                 &trans
-&kp KP_NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1  &kp UNDER        &kp MINUS      &kp EQUAL             &trans
-&kp LSHFT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &mt RIGHT_BRACE LEFT_BRACE              &mt COMMA DOT        &kp K_MUTE       &kp F3  &sk RIGHT_SHIFT  &kp LG(GRAVE)  &open_vs_recent_code  &trans
+&kp GRAVE        &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2  &none      &none                &none                 &trans
+&kp KP_NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1  &kp UNDER  &kp MINUS            &kp EQUAL             &trans
+&kp LSHFT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &mt RIGHT_BRACE LEFT_BRACE              &mt COMMA DOT        &kp K_MUTE       &kp F3  &none      &file_change_vscode  &open_vs_recent_code  &trans
                                              &trans           &trans                                  &trans               &trans           &trans  &trans
             >;
         };
