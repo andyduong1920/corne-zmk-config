@@ -47,9 +47,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LC(ESCAPE) ESCAPE  &mt GRAVE Q  &kp W  &kp E             &kp R        &kp T        &kp Y    &kp U          &kp I      &kp O        &kp P              &sl 2
-&kp TAB                &kp A        &kp S  &kp D             &kp F        &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI           &to 1
-&kp LSHFT              &mt CAPS Z   &kp X  &mt LG(C) C       &mt LG(V) V  &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &mt FSLH QUESTION  &to 2
+&mt LC(ESCAPE) ESCAPE  &mt GRAVE Q  &kp W  &kp E             &kp R        &kp T        &kp Y    &kp U          &kp I      &kp O        &kp P     &sl 2
+&kp TAB                &kp A        &kp S  &kp D             &kp F        &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI  &to 1
+&kp LSHFT              &mt CAPS Z   &kp X  &mt LG(C) C       &mt LG(V) V  &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &kp FSLH  &to 2
                                            &kp LEFT_CONTROL  &kp LGUI     &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
