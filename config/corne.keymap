@@ -73,8 +73,17 @@
             bindings = <
 &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none    &trans    &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans
-&trans  &kp PAGE_DOWN   &kp PAGE_UP     &kp HOME         &kp END  &trans    &none           &none           &none            &none   &trans  &bootloader
-                                        &trans           &trans   &trans    &trans          &trans          &trans
+&trans  &kp PAGE_DOWN   &kp PAGE_UP     &kp HOME         &kp END  &trans    &none           &none           &none            &none   &trans  &none
+                                        &trans           &trans   &trans    &trans          &trans          &mo 3
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
