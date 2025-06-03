@@ -71,8 +71,8 @@
 
         Utils {
             bindings = <
-&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &trans    &trans          &kp UP_ARROW    &trans           &trans  &trans  &to 0
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans
+&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN  &trans    &trans          &kp UP_ARROW    &trans           &trans  &trans  &to 0
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans
 &trans  &kp PAGE_DOWN   &kp PAGE_UP     &kp HOME         &kp END         &trans    &none           &none           &none            &none   &trans  &none
                                         &trans           &trans          &trans    &trans          &trans          &mo 3
             >;
@@ -82,9 +82,20 @@
             bindings = <
 &trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &to 4
                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        Mouse {
+            bindings = <
+&kp ESCAPE  &trans          &kp UP_ARROW    &trans     &trans               &kp HOME                &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &file_change_vscode  &open_vs_recent_code    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LG(Z)       &kp LG(GRAVE)   &kp LG(C)  &kp LG(V)            &kp END                 &trans  &trans  &trans  &trans  &trans  &trans
+                                            &mkp RCLK  &kp LC(ESCAPE)       &mkp LCLK               &trans  &trans  &trans
+            >;
+
+            label = "mouse-daily";
         };
     };
 };
