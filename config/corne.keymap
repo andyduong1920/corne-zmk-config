@@ -89,10 +89,10 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE  &trans          &kp UP_ARROW    &trans     &trans               &kp HOME                &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &file_change_vscode  &open_vs_recent_code    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LG(Z)       &kp LG(GRAVE)   &kp LG(C)  &kp LG(V)            &kp END                 &trans  &trans  &trans  &trans  &trans  &trans
-                                            &mkp RCLK  &kp LC(ESCAPE)       &mkp LCLK               &trans  &trans  &trans
+&mt LC(ESCAPE) ESCAPE  &trans          &kp UP_ARROW    &trans     &kp END              &kp HOME                &trans  &trans  &trans  &trans  &trans  &trans
+&trans                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &file_change_vscode  &open_vs_recent_code    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                 &kp LG(Z)       &kp LG(GRAVE)   &kp LG(C)  &kp LG(V)            &kp BACKSPACE           &trans  &trans  &trans  &trans  &trans  &trans
+                                                       &mkp RCLK  &kp LGUI             &mkp LCLK               &trans  &trans  &trans
             >;
 
             label = "mouse-daily";
