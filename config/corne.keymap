@@ -49,10 +49,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LC(ESCAPE) ESCAPE  &mt GRAVE Q  &kp W  &kp E             &kp R        &to 4        &kp Y    &kp U          &kp I      &kp O        &kp P     &sl 2
-&kp TAB                &kp A        &kp S  &kp D             &kp F        &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI  &to 1
-&kp LSHFT              &mt CAPS Z   &kp X  &mt LG(C) C       &mt LG(V) V  &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &kp FSLH  &to 2
-                                           &kp LEFT_CONTROL  &kp LGUI     &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
+&kp ESCAPE  &kp Q  &kp W  &kp E             &kp R     &to 4        &kp Y    &kp U          &kp I      &kp O        &kp P     &sl 2
+&kp TAB     &kp A  &kp S  &kp D             &kp F     &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI  &to 1
+&kp LSHFT   &kp Z  &kp X  &kp C             &kp V     &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &kp FSLH  &to 2
+                          &kp LEFT_CONTROL  &kp LGUI  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
 
@@ -91,10 +91,10 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE      &kp Q      &kp LG(W)      &kp HOME   &kp PAGE_UP    &kp UP_ARROW                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp A      &kp LG(S)      &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW                &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(ESCAPE)  &kp LG(Z)  &kp BACKSPACE  &kp TAB    &kp LG(V)      &mt LG(R) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &mkp RCLK  &kp LEFT_GUI   &mkp LCLK                     &trans  &trans  &trans
+&kp ESCAPE      &kp Q      &kp LG(W)      &kp HOME   &kp LG(R)      &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A      &kp LG(S)      &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(ESCAPE)  &kp LG(Z)  &kp BACKSPACE  &kp LG(C)  &kp LG(V)      &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &mkp RCLK  &kp LGUI       &mkp LCLK               &trans  &trans  &trans
             >;
 
             label = "^_^";
