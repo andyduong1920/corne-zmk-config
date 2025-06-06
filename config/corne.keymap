@@ -17,7 +17,8 @@
             bindings = <&none>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            hold-trigger-on-release;
         };
     };
 
@@ -90,10 +91,10 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE      &kp Q      &kp LG(W)      &kp HOME   &kp LG(R)      &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp A      &kp LG(S)      &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(ESCAPE)  &kp LG(Z)  &kp BACKSPACE  &kp TAB    &kp LG(V)      &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &mkp RCLK  &kp LEFT_GUI   &mkp LCLK               &trans  &trans  &trans
+&kp ESCAPE      &kp Q      &kp LG(W)      &kp HOME   &kp PAGE_UP    &kp UP_ARROW                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A      &kp LG(S)      &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW                &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(ESCAPE)  &kp LG(Z)  &kp BACKSPACE  &kp TAB    &kp LG(V)      &mt LG(R) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &mkp RCLK  &kp LEFT_GUI   &mkp LCLK                     &trans  &trans  &trans
             >;
 
             label = "^_^";
