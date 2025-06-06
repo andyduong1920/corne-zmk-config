@@ -90,10 +90,10 @@
 
         Mouse {
             bindings = <
-&mt LC(ESCAPE) ESCAPE  &kp Q      &kp LG(W)         &kp HOME   &kp LG(R)      &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB                &kp A      &kp LG(S)         &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT         &kp LG(Z)  &kp LG(NUMBER_9)  &kp LG(C)  &kp LG(V)      &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
-                                                    &mkp RCLK  &kp LEFT_GUI   &mkp LCLK               &trans  &trans  &trans
+&kp ESCAPE      &kp Q      &kp LG(W)    &kp HOME   &kp LG(R)      &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp A      &kp LG(S)    &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LC(ESC)  &kp TAB    &kp LG(V)      &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &mkp RCLK  &kp LEFT_GUI   &mkp LCLK               &trans  &trans  &trans
             >;
 
             label = "^_^";
