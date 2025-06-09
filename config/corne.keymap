@@ -91,10 +91,10 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE     &none      &kp LG(W)  &kp HOME   &kp LG(R)      &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LGUI       &kp LG(A)  &kp LG(S)  &kp END    &kp PAGE_DOWN  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
-&kp BACKSPACE  &kp LG(Z)  &kp LSHFT  &kp LG(C)  &kp LG(V)      &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
-                                     &mkp RCLK  &mo 5          &mkp LCLK               &trans  &trans  &trans
+&kp ESCAPE     &none      &kp LG(W)  &kp HOME       &kp LG(R)  &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
+&kp LGUI       &kp LG(A)  &kp LG(S)  &kp PAGE_DOWN  &kp LG(F)  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
+&kp BACKSPACE  &kp LG(Z)  &kp LSHFT  &kp LG(C)      &kp LG(V)  &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &mkp RCLK      &mo 5      &mkp LCLK               &trans  &trans  &trans
             >;
 
             label = "^_~";
