@@ -102,10 +102,10 @@
 
         layer_5 {
             bindings = <
-&none  &none           &none           &none         &none            &none    &none  &none  &none  &none  &none  &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &none  &none  &none  &none  &none  &none
-&none  &none           &none           &kp PAGE_UP   &kp PAGE_DOWN    &none    &none  &none  &none  &none  &none  &none
-                                       &kp LC(ESC)   &none            &none    &none  &none  &none
+&none  &none           &none           &none           &none            &none    &none  &none  &none  &none  &none  &none
+&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none    &none  &none  &none  &none  &none  &none
+&none  &none           &none           &msc SCRL_DOWN  &msc SCRL_UP     &none    &none  &none  &none  &none  &none  &none
+                                       &kp LC(ESC)     &none            &none    &none  &none  &none
             >;
 
             label = "^_^";
