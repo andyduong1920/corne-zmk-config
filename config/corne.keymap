@@ -36,6 +36,13 @@
             bindings = <&kp LC(LS(S)) &kp LC(LS(Z))>;
             label = "FILE_CHANGE_VSCODE";
         };
+
+        clipboard_history: clipboard_history {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp BACKSPACE &kp BACKSPACE &kp C &kp L &kp I &kp P &kp B &kp ENTER>;
+            label = "CLIPBOARD_HISTORY";
+        };
     };
 
     keymap {
@@ -102,10 +109,10 @@
 
         layer_5 {
             bindings = <
-&kp LG(L)  &kp LG(Q)  &none  &none           &none            &none                    &none  &none  &none  &none  &none  &none
-&none      &none      &none  &mmv MOVE_UP    &mmv MOVE_DOWN   &none                    &none  &none  &none  &none  &none  &none
-&none      &none      &none  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp LG(RIGHT_BRACKET)    &none  &none  &none  &none  &none  &none
-                             &kp LC(ESC)     &none            &kp ENTER                &none  &none  &none
+&kp LG(L)  &kp LG(Q)  &none  &none               &open_vs_recent_code  &none                    &none  &none  &none  &none  &none  &none
+&none      &none      &none  &mmv MOVE_UP        &mmv MOVE_DOWN        &none                    &none  &none  &none  &none  &none  &none
+&none      &none      &none  &clipboard_history  &mmv MOVE_RIGHT       &kp LG(RIGHT_BRACKET)    &none  &none  &none  &none  &none  &none
+                             &kp LEFT_SHIFT      &none                 &kp ENTER                &none  &none  &none
             >;
 
             label = "^_^";
