@@ -99,7 +99,7 @@
             bindings = <
 &kp LG(L)  &kp LG(Q)       &kp LC(W)     &none                          &open_vs_recent_code           &none                        &none  &none  &none  &none  &none  &none
 &none      &mmv MOVE_DOWN  &mmv MOVE_UP  &mt LA(NUMBER_3) LA(NUMBER_2)  &mt LA(NUMBER_1) LA(NUMBER_4)  &mt LC(DOWN) LC(UP_ARROW)    &none  &none  &none  &none  &none  &none
-&none      &none           &none         &clipboard_history             &kp LG(LS(C))                  &kp LG(RIGHT_BRACKET)        &none  &none  &none  &none  &none  &none
+&to 0      &none           &none         &clipboard_history             &kp LG(LS(C))                  &kp LG(RIGHT_BRACKET)        &none  &none  &none  &none  &none  &none
                                          &kp LEFT_SHIFT                 &none                          &kp ENTER                    &none  &none  &none
             >;
 
