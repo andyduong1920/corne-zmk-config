@@ -44,9 +44,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E             &kp R     &to 4        &kp Y    &kp U          &kp I      &kp O        &kp P     &sl 2
-&kp TAB     &kp A  &kp S  &kp D             &kp F     &kp G        &kp H    &kp J          &kp K      &mt LG(L) L  &kp SEMI  &to 1
-&kp LSHFT   &kp Z  &kp X  &kp C             &kp V     &kp B        &kp N    &kp M          &kp COMMA  &kp DOT      &kp FSLH  &to 2
+&kp ESCAPE  &kp Q  &kp W  &lt 4 E           &kp R     &kp T        &kp Y    &kp U          &kp I      &kp O    &kp P     &sl 2
+&kp TAB     &kp A  &kp S  &kp D             &kp F     &kp G        &kp H    &kp J          &kp K      &kp L    &kp SEMI  &to 1
+&kp LSHFT   &kp Z  &kp X  &kp C             &kp V     &kp B        &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &to 2
                           &kp LEFT_CONTROL  &kp LGUI  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
@@ -86,7 +86,7 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE     &none      &kp LG(W)  &kp HOME       &kp LG(R)  &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE     &to 4      &kp LG(W)  &kp HOME       &kp LG(R)  &kp UP_ARROW            &trans  &trans  &trans  &trans  &trans  &trans
 &kp LGUI       &kp LG(A)  &kp LG(S)  &kp PAGE_DOWN  &kp LG(F)  &kp DOWN_ARROW          &trans  &trans  &trans  &trans  &trans  &trans
 &kp BACKSPACE  &kp LG(Z)  &kp LSHFT  &kp LG(C)      &kp LG(V)  &kp LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
                                      &mkp RCLK      &mo 5      &mkp LCLK               &trans  &trans  &trans
@@ -97,10 +97,10 @@
 
         layer_5 {
             bindings = <
-&kp LG(L)  &kp LG(Q)                      &kp LC(W)                      &none               &open_vs_recent_code  &none                  &none  &none  &none  &none  &none  &none
-&none      &mmv MOVE_DOWN  &mmv MOVE_UP   &mt LA(NUMBER_3) LA(NUMBER_2) &mt LA(NUMBER_1) LA(NUMBER_4)        &mt LC(DOWN) LC(UP_ARROW)    &none  &none  &none  &none  &none  &none
-&none      &none                          &none                          &clipboard_history  &kp LG(LS(C))         &kp LG(RIGHT_BRACKET)        &none  &none  &none  &none  &none  &none
-                                                                         &kp LEFT_SHIFT      &none                 &kp ENTER                    &none  &none  &none
+&kp LG(L)  &kp LG(Q)       &kp LC(W)     &none                          &open_vs_recent_code           &none                        &none  &none  &none  &none  &none  &none
+&none      &mmv MOVE_DOWN  &mmv MOVE_UP  &mt LA(NUMBER_3) LA(NUMBER_2)  &mt LA(NUMBER_1) LA(NUMBER_4)  &mt LC(DOWN) LC(UP_ARROW)    &none  &none  &none  &none  &none  &none
+&none      &none           &none         &clipboard_history             &kp LG(LS(C))                  &kp LG(RIGHT_BRACKET)        &none  &none  &none  &none  &none  &none
+                                         &kp LEFT_SHIFT                 &none                          &kp ENTER                    &none  &none  &none
             >;
 
             label = "^_^";
