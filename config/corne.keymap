@@ -41,6 +41,16 @@
             key-positions = <1 2>;
             slow-release;
             layers = <0>;
+            timeout-ms = <1000>;
+        };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <29 4>;
+            layers = <0>;
+            timeout-ms = <1000>;
+            require-prior-idle-ms = <1000>;
+            slow-release;
         };
     };
 
