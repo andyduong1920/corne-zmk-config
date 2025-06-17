@@ -78,9 +78,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2     &trans        &trans          &trans                &none
-&none  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1     &kp UNDER     &kp MINUS       &kp EQUAL             &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &mt RIGHT_BRACE LEFT_BRACE              &mt COMMA DOT        &kp LEFT         &kp RIGHT  &kp UP_ARROW  &kp DOWN_ARROW  &open_vs_recent_code  &none
+&none  &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2     &trans        &trans          &trans     &none
+&none  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1     &kp UNDER     &kp MINUS       &kp EQUAL  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &mt RIGHT_BRACE LEFT_BRACE              &mt COMMA DOT        &kp LEFT         &kp RIGHT  &kp UP_ARROW  &kp DOWN_ARROW  &none      &none
                                    &trans           &trans                                  &trans               &trans           &trans     &to 0
             >;
         };
