@@ -119,10 +119,10 @@
 
         mouse {
             bindings = <
-&none  &esc_or_lock LG(L) ESCAPE  &kp LG(W)  &kp HOME       &kp LG(R)  &kp UP_ARROW            &none  &none  &none  &none  &none  &none
-&none  &kp LG(A)                  &kp LG(S)  &kp PAGE_DOWN  &kp LG(F)  &kp DOWN_ARROW          &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)                  &kp LSHFT  &kp LG(C)      &kp LG(V)  &kp LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
-                                             &mkp RCLK      &mo 5      &mkp LCLK               &none  &none  &none
+&none  &esc_or_lock LG(L) ESCAPE  &kp LG(W)  &kp HOME       &kp LG(R)                     &kp UP_ARROW            &none  &none  &none  &none  &none  &none
+&none  &kp LG(A)                  &kp LG(S)  &kp PAGE_DOWN  &esc_or_lock LG(LS(F)) LG(F)  &kp DOWN_ARROW          &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)                  &kp LSHFT  &kp LG(C)      &kp LG(V)                     &kp LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
+                                             &mkp RCLK      &mo 5                         &mkp LCLK               &none  &none  &none
             >;
 
             label = "^_~";
