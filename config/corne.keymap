@@ -11,25 +11,11 @@
 
 / {
     macros {
-        open_vs_recent_code: open_vs_recent_code {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp BACKSPACE &kp BACKSPACE &kp S &kp E &kp A &kp R &kp C &kp H &kp SPACE &kp V &kp S &kp ENTER>;
-            label = "OPEN_VS_RECENT_CODE";
-        };
-
         file_change_vscode: file_change_vscode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(S)) &kp LC(LS(Z))>;
             label = "FILE_CHANGE_VSCODE";
-        };
-
-        clipboard_history: clipboard_history {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp BACKSPACE &kp BACKSPACE &kp C &kp L &kp I &kp P &kp B &kp ENTER>;
-            label = "CLIPBOARD_HISTORY";
         };
     };
 
@@ -119,10 +105,10 @@
 
         mouse {
             bindings = <
-&none  &esc_or_lock LG(L) ESCAPE      &esc_or_lock LG(LS(W)) LG(W)     &kp HOME                         &kp LG(R)                    &kp UP_ARROW                                       &none  &none  &none  &none  &none  &none
-&none  &esc_or_lock LEFT_SHIFT LG(A)  &esc_or_lock LEFT_CONTROL LG(S)  &esc_or_lock LEFT_ALT PAGE_DOWN  &esc_or_lock LEFT_GUI LG(F)  &esc_or_lock LG(LS(F)) DOWN_ARROW                  &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)                      &none                            &esc_or_lock LG(LS(C)) LG(C)     &kp LG(V)                    &esc_or_lock LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
-                                                                       &mkp RCLK                        &mo 5                        &mkp LCLK                                          &none  &none  &none
+&none  &esc_or_lock LG(L) ESCAPE      &esc_or_lock LG(LS(W)) LG(W)     &kp HOME                         &esc_or_lock LC(NUMBER_6) LG(R)  &kp UP_ARROW                                       &none  &none  &none  &none  &none  &none
+&none  &esc_or_lock LEFT_SHIFT LG(A)  &esc_or_lock LEFT_CONTROL LG(S)  &esc_or_lock LEFT_ALT PAGE_DOWN  &esc_or_lock LEFT_GUI LG(F)      &esc_or_lock LG(LS(F)) DOWN_ARROW                  &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)                      &none                            &esc_or_lock LG(LS(C)) LG(C)     &esc_or_lock LC(N5) LG(V)        &esc_or_lock LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
+                                                                       &mkp RCLK                        &mo 5                            &mkp LCLK                                          &none  &none  &none
             >;
 
             label = "^_~";
@@ -130,9 +116,9 @@
 
         mouse-2 {
             bindings = <
-&none  &kp LG(Q)       &kp LC(W)     &none                          &open_vs_recent_code           &none                        &none  &none  &none  &none  &none  &none
+&none  &kp LG(Q)       &kp LC(W)     &none                          &none                          &none                        &none  &none  &none  &none  &none  &none
 &none  &mmv MOVE_DOWN  &mmv MOVE_UP  &mt LA(NUMBER_3) LA(NUMBER_2)  &mt LA(NUMBER_1) LA(NUMBER_4)  &mt LC(DOWN) LC(UP_ARROW)    &none  &none  &none  &none  &none  &none
-&none  &to 0           &none         &clipboard_history             &none                          &none                        &none  &none  &none  &none  &none  &none
+&none  &to 0           &none         &none                          &none                          &none                        &none  &none  &none  &none  &none  &none
                                      &kp BACKSPACE                  &none                          &kp ENTER                    &none  &none  &none
             >;
 
