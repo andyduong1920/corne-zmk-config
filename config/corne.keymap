@@ -41,7 +41,7 @@
 
         show_all_app {
             bindings = <&kp LC(UP_ARROW)>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
             layers = <4>;
         };
     };
