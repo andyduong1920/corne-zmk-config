@@ -107,7 +107,7 @@
             bindings = <
 &none  &esc_or_lock LG(L) ESCAPE      &esc_or_lock LG(LS(W)) LG(W)     &kp TAB                          &esc_or_lock LA(NUMBER_6) LG(R)  &esc_or_lock HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
 &none  &esc_or_lock LEFT_SHIFT LG(A)  &esc_or_lock LEFT_CONTROL LG(S)  &esc_or_lock LEFT_ALT PAGE_DOWN  &esc_or_lock LEFT_GUI LG(F)      &esc_or_lock LG(LS(F)) DOWN_ARROW                  &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)                      &none                            &esc_or_lock LG(LS(C)) LG(C)     &esc_or_lock LA(N5) LG(V)        &esc_or_lock LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)                      &kp LC(F)                        &esc_or_lock LG(LS(C)) LG(C)     &esc_or_lock LA(N5) LG(V)        &esc_or_lock LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
                                                                        &mkp RCLK                        &mo 5                            &mkp LCLK                                          &none  &none  &none
             >;
 
