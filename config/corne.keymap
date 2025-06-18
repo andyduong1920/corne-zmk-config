@@ -38,6 +38,12 @@
             require-prior-idle-ms = <1000>;
             slow-release;
         };
+
+        show_all_app {
+            bindings = <&kp LC(UP_ARROW)>;
+            key-positions = <16 17>;
+            layers = <4>;
+        };
     };
 
     behaviors {
