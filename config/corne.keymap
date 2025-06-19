@@ -50,6 +50,12 @@
             key-positions = <14 15>;
             layers = <4>;
         };
+
+        search-all-vs-code {
+            bindings = <&kp LG(LS(F))>;
+            key-positions = <16 28>;
+            layers = <4>;
+        };
     };
 
     behaviors {
