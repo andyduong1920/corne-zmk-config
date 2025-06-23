@@ -59,9 +59,9 @@
     };
 
     behaviors {
-        esc_or_lock: esc_or_lock {
+        andy_hold_or_tap: andy_hold_or_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "ESC_OR_LOCK";
+            label = "ANDY_HOLD_OR_TAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -74,27 +74,15 @@
         compatible = "zmk,keymap";
 
         base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &none  &kp Q  &kp W  &kp E         &kp R     &kp T        &kp Y    &kp U          &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D         &kp F     &kp G        &kp H    &kp J          &kp K      &kp L    &kp SEMI  &none
+&none  &andy_hold_or_tap LEFT_SHIFT A  &andy_hold_or_tap LEFT_CONTROL S  &andy_hold_or_tap LEFT_ALT D  &andy_hold_or_tap LEFT_GUI F     &kp G        &kp H    &andy_hold_or_tap LEFT_GUI J          &andy_hold_or_tap LEFT_ALT K      &andy_hold_or_tap LEFT_CONTROL L    &andy_hold_or_tap LEFT_SHIFT SEMI  &none
 &none  &kp Z  &kp X  &kp C         &kp V     &kp B        &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &none
                      &kp LEFT_ALT  &kp LGUI  &kp SPACE    &kp RET  &kp BACKSPACE  &to 1
             >;
         };
 
         symbols {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &none  &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2     &trans        &trans          &trans     &none
 &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1     &kp UNDER     &kp MINUS       &kp EQUAL  &none
@@ -123,9 +111,9 @@
 
         mouse {
             bindings = <
-&none  &esc_or_lock LG(L) ESCAPE      &esc_or_lock LG(LS(W)) LG(W)     &kp TAB                          &esc_or_lock LA(NUMBER_6) LG(R)  &esc_or_lock HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
-&none  &esc_or_lock LEFT_SHIFT LG(A)  &esc_or_lock LEFT_CONTROL LG(S)  &esc_or_lock LEFT_ALT PAGE_DOWN  &esc_or_lock LEFT_GUI LG(F)      &esc_or_lock LG(G) DOWN_ARROW                      &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)                      &kp LC(F)                        &esc_or_lock LG(LS(C)) LG(C)     &esc_or_lock LA(N5) LG(V)        &esc_or_lock LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
+&none  &andy_hold_or_tap LG(L) ESCAPE      &andy_hold_or_tap LG(LS(W)) LG(W)     &kp TAB                          &andy_hold_or_tap LA(NUMBER_6) LG(R)  &andy_hold_or_tap HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
+&none  &andy_hold_or_tap LEFT_SHIFT LG(A)  &andy_hold_or_tap LEFT_CONTROL LG(S)  &andy_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_hold_or_tap LEFT_GUI LG(F)      &andy_hold_or_tap LG(G) DOWN_ARROW                      &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)                      &kp LC(F)                        &andy_hold_or_tap LG(LS(C)) LG(C)     &andy_hold_or_tap LA(N5) LG(V)        &andy_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
                                                                        &mkp RCLK                        &mo 5                            &mkp LCLK                                          &none  &none  &none
             >;
 
@@ -137,7 +125,7 @@
 &none  &kp LG(Q)       &kp W      &kp E                                 &kp R                          &kp LG(T)    &none  &none  &none  &none  &none  &none
 &none  &kp LEFT_ARROW  &kp RIGHT  &mt LA(NUMBER_3) LA(NUMBER_2)         &mt LA(NUMBER_1) LA(NUMBER_4)  &none        &none  &none  &none  &none  &none  &none
 &none  &to 0           &none      &none                                 &none                          &none        &none  &none  &none  &none  &none  &none
-                                  &esc_or_lock LG(BACKSPACE) BACKSPACE  &none                          &kp ENTER    &none  &none  &none
+                                  &andy_hold_or_tap LG(BACKSPACE) BACKSPACE  &none                          &kp ENTER    &none  &none  &none
             >;
 
             label = "^_^";
