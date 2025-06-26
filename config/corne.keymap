@@ -108,7 +108,7 @@
             key-positions = <36 25>;
             timeout-ms = <1000>;
             slow-release;
-            layers = <1 2>;
+            layers = <1>;
         };
 
         /// Key for alpha numeric layer
@@ -273,21 +273,15 @@
             layers = <0 1>;
         };
 
-        git_status {
-            bindings = <&git_status>;
-            key-positions = <17 14>;
-            layers = <0 1>;
-        };
-
-        git_push {
-            bindings = <&git_push>;
-            key-positions = <17 16>;
-            layers = <0 1>;
-        };
-
         delete {
             bindings = <&kp BACKSPACE>;
             key-positions = <36 37>;
+            layers = <0 1>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <37 38>;
             layers = <0 1>;
         };
     };
@@ -305,14 +299,14 @@
     };
 
     behaviors {
-        andy_press_tap_or_hold_layer: andy_press_tap_or_hold_layer {
+        andy_mouse_tap_or_hold_layer: andy_mouse_tap_or_hold_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "ANDY_PRESS_TAP_OR_HOLD_LAYER";
-            bindings = <&mo>, <&kp>;
+            label = "ANDY_MOUSE_TAP_OR_HOLD_LAYER";
+            bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <350>;
+            tapping-term-ms = <400>;
         };
     };
 
@@ -324,30 +318,30 @@
 &none  &kp Q                                 &kp W                                   &kp E                               &kp R                               &kp T        &kp Y    &kp U                                            &kp I                               &kp O                                   &kp P                                    &none
 &none  &andy_press_hold_or_tap LEFT_SHIFT A  &andy_press_hold_or_tap LEFT_CONTROL S  &andy_press_hold_or_tap LEFT_ALT D  &andy_press_hold_or_tap LEFT_GUI F  &kp G        &kp H    &andy_press_hold_or_tap LEFT_GUI J               &andy_press_hold_or_tap LEFT_ALT K  &andy_press_hold_or_tap LEFT_CONTROL L  &andy_press_hold_or_tap LEFT_SHIFT SEMI  &none
 &none  &kp Z                                 &kp X                                   &kp C                               &kp V                               &kp B        &kp N    &kp M                                            &kp COMMA                           &kp DOT                                 &kp FSLH                                 &none
-                                                                                     &none                               &none                               &kp SPACE    &kp RET  &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none
+                                                                                     &mo 2                               &none                               &kp SPACE    &kp RET  &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp RCLK  &mo 2   &mkp LCLK    &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &andy_mouse_tap_or_hold_layer 2 RCLK  &none   &mkp LCLK    &trans  &trans  &trans
             >;
 
             label = "mouse";
         };
 
-        mouse-2 {
+        number {
             bindings = <
-&trans  &trans  &trans  &trans                                           &trans  &kp LG(T)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none   &kp ENTER    &trans  &trans  &trans
+&trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_NUMBER_0  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans           &trans    &trans  &trans  &trans
             >;
 
-            label = "mouse-2";
+            label = "number";
         };
     };
 };
