@@ -129,13 +129,14 @@
             bindings = <&kp LG(Q)>;
             key-positions = <37 1>;
             timeout-ms = <50>;
+            slow-release;
             layers = <0 1>;
         };
 
         close_window {
             bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
             key-positions = <37 2>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
             slow-release;
             layers = <0 1>;
         };
@@ -181,7 +182,8 @@
         copy {
             bindings = <&andy_press_hold_or_tap LG(LS(C)) LG(C)>;
             key-positions = <37 27>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
+            slow-release;
             layers = <0 1>;
         };
 
@@ -195,21 +197,24 @@
         home {
             bindings = <&andy_press_hold_or_tap HOME UP_ARROW>;
             key-positions = <37 5>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
+            slow-release;
             layers = <0 1>;
         };
 
         end {
             bindings = <&andy_press_hold_or_tap END DOWN_ARROW>;
             key-positions = <37 17>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
+            slow-release;
             layers = <0 1>;
         };
 
         back_and_forward {
             bindings = <&andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
             key-positions = <37 29>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
+            slow-release;
             layers = <0 1>;
         };
 
@@ -258,7 +263,7 @@
         delete {
             bindings = <&andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE>;
             key-positions = <36 37>;
-            timeout-ms = <50>;
+            timeout-ms = <500>;
             layers = <0 1>;
         };
 
@@ -290,7 +295,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -320,12 +325,21 @@
         number {
             bindings = <
 &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 3  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_NUMBER_0  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                               &trans     &trans           &trans    &trans  &trans  &trans
             >;
 
             label = "number";
+        };
+
+        symbol {
+            bindings = <
+&trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans                &trans                 &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
