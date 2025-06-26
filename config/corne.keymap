@@ -42,34 +42,6 @@
             layers = <1>;
         };
 
-        // Layer switch
-
-        to-layer-mouse {
-            bindings = <&to 1>;
-            key-positions = <36 26>;
-            slow-release;
-            layers = <0>;
-            timeout-ms = <1000>;
-        };
-
-        // Key for alpha numeric layer
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <36 2>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0>;
-        };
-
-        capsLock {
-            bindings = <&kp CLCK>;
-            key-positions = <36 3>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0>;
-        };
-
         // Common
 
         show_all_app {
@@ -90,9 +62,73 @@
             layers = <1 0>;
         };
 
+        // With 36 position
+
+        /// Layer switch
+
+        to-layer-mouse {
+            bindings = <&to 1>;
+            key-positions = <36 26>;
+            slow-release;
+            layers = <0>;
+            timeout-ms = <1000>;
+        };
+
+        to_base_layout {
+            bindings = <&to 0>;
+            key-positions = <36 25>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <1 2>;
+        };
+
+        /// Key for alpha numeric layer
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <36 2>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        capsLock {
+            bindings = <&kp CLCK>;
+            key-positions = <36 3>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <36 1>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        slack {
+            bindings = <&kp LA(NUMBER_4)>;
+            key-positions = <36 14>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        vscode {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <36 28>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        // With 37 position
+
         quit_app {
             bindings = <&kp LG(Q)>;
-            key-positions = <1 37>;
+            key-positions = <37 1>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
@@ -146,14 +182,6 @@
             layers = <0 1>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <36 1>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
         search {
             bindings = <&kp LG(F)>;
             key-positions = <37 16>;
@@ -200,30 +228,6 @@
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
-        };
-
-        slack {
-            bindings = <&kp LA(NUMBER_4)>;
-            key-positions = <36 14>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
-        vscode {
-            bindings = <&kp LA(NUMBER_1)>;
-            key-positions = <36 28>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
-        to_base_layout {
-            bindings = <&to 0>;
-            key-positions = <36 25>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <1 2>;
         };
     };
 
