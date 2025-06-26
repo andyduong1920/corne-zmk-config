@@ -278,42 +278,42 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         right_PARENTHESIS {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <4 5>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         left_BRACKET {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 16>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         right_BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <16 17>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         left_BRACE {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <27 28>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         right_BRACE {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <28 29>;
             timeout-ms = <50>;
-            layers = <3>;
+            layers = <2 3>;
         };
 
         to-layer-number {
@@ -376,8 +376,8 @@
             bindings = <
 &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_NUMBER_0  &kp UP_ARROW      &kp AMPERSAND    &kp PLUS     &kp MINUS  &kp ASTERISK    &kp SLASH  &trans
 &none   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp UNDERSCORE   &kp DOWN_ARROW    &kp DOLLAR       &kp PERCENT  &kp CARET  &kp UNDERSCORE  &kp EQUAL  &trans
-&trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LEFT_ARROW   &kp RIGHT         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp BSLH        &kp PIPE  &trans
-                              &trans     &tog 3           &trans            &trans  &trans  &trans
+&trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LEFT_ARROW   &kp RIGHT         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp BSLH        &kp PIPE   &trans
+                              &trans     &tog 3           &trans            &trans           &trans       &trans
             >;
 
             label = "number";
