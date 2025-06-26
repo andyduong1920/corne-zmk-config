@@ -335,11 +335,13 @@
 
         symbol {
             bindings = <
-&trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans                &trans                 &trans    &trans  &trans  &trans
+&trans  &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 3  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans     &trans                &trans                   &trans  &trans  &trans
             >;
+
+            label = "symbol";
         };
     };
 };
