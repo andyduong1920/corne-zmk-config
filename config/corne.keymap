@@ -22,13 +22,7 @@
     combos {
         compatible = "zmk,combos";
 
-        to-layer-mouse {
-            bindings = <&to 1>;
-            key-positions = <36 26>;
-            slow-release;
-            layers = <0>;
-            timeout-ms = <1000>;
-        };
+        // Utils
 
         bootloader {
             bindings = <&bootloader>;
@@ -38,6 +32,45 @@
             require-prior-idle-ms = <1000>;
             slow-release;
         };
+
+        bluetooth_reset {
+            bindings = <&bt BT_CLR>;
+            key-positions = <29 25>;
+            timeout-ms = <1000>;
+            slow-release;
+            require-prior-idle-ms = <1000>;
+            layers = <1>;
+        };
+
+        // Layer switch
+
+        to-layer-mouse {
+            bindings = <&to 1>;
+            key-positions = <36 26>;
+            slow-release;
+            layers = <0>;
+            timeout-ms = <1000>;
+        };
+
+        // Key for alpha numeric layer
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <36 2>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        capsLock {
+            bindings = <&kp CLCK>;
+            key-positions = <36 3>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        // Common
 
         show_all_app {
             bindings = <&kp LC(UP_ARROW)>;
@@ -55,15 +88,6 @@
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
             layers = <1 0>;
-        };
-
-        bluetooth_reset {
-            bindings = <&bt BT_CLR>;
-            key-positions = <29 25>;
-            timeout-ms = <1000>;
-            slow-release;
-            require-prior-idle-ms = <1000>;
-            layers = <1>;
         };
 
         quit_app {
@@ -127,23 +151,7 @@
             key-positions = <36 1>;
             timeout-ms = <1000>;
             slow-release;
-            layers = <0>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <36 2>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0>;
-        };
-
-        capsLock {
-            bindings = <&kp CLCK>;
-            key-positions = <36 3>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         search {
@@ -210,7 +218,7 @@
             layers = <0 1>;
         };
 
-        to_base_layour {
+        to_base_layout {
             bindings = <&to 0>;
             key-positions = <36 25>;
             timeout-ms = <1000>;
