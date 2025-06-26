@@ -63,7 +63,6 @@
         };
 
         // With 36 position
-
         /// Layer switch
 
         to-layer-mouse {
@@ -269,10 +268,10 @@
 
         mouse {
             bindings = <
-&none  &none           &none             &none                                       &andy_press_hold_or_tap LA(NUMBER_6) LG(R)  &andy_press_hold_or_tap HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)       &kp LC(F)         &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(N5) LG(V)        &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
-                                         &mkp RCLK                                   &none                                       &mkp LCLK                                                     &none  &none  &none
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp RCLK  &trans  &mkp LCLK    &trans  &trans  &trans
             >;
 
             label = "mouse";
