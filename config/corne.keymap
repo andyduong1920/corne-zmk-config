@@ -35,7 +35,7 @@
 
         bluetooth_reset {
             bindings = <&bt BT_CLR>;
-            key-positions = <29 25>;
+            key-positions = <29 3>;
             timeout-ms = <1000>;
             slow-release;
             require-prior-idle-ms = <1000>;
@@ -50,7 +50,7 @@
             layers = <1 0>;
         };
 
-        show_all_windown {
+        show_all_window {
             bindings = <&kp LC(DOWN_ARROW)>;
             key-positions = <14 15>;
             layers = <1 0>;
@@ -60,6 +60,22 @@
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
             layers = <1 0>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        lock {
+            bindings = <&kp LG(L)>;
+            key-positions = <25 26>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
         };
 
         // With 36 position
@@ -85,7 +101,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <36 17>;
+            key-positions = <36 5>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0>;
@@ -93,34 +109,10 @@
 
         capsLock {
             bindings = <&kp CLCK>;
-            key-positions = <36 27>;
+            key-positions = <27 12>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
-        slack {
-            bindings = <&kp LA(NUMBER_4)>;
-            key-positions = <36 14>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
-        vscode {
-            bindings = <&kp LA(NUMBER_1)>;
-            key-positions = <36 28>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
         };
 
         // With 37 position
@@ -190,7 +182,7 @@
         };
 
         paste {
-            bindings = <&andy_press_hold_or_tap LA(N5) LG(V)>;
+            bindings = <&kp LG(V)>;
             key-positions = <37 28>;
             timeout-ms = <1000>;
             slow-release;
@@ -229,17 +221,33 @@
             layers = <0 1>;
         };
 
-        browser {
-            bindings = <&kp LA(NUMBER_2)>;
-            key-positions = <36 29>;
+        clipboard_history {
+            bindings = <&kp LA(NUMBER_5)>;
+            key-positions = <36 28>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
         };
 
-        lock {
-            bindings = <&kp LG(L)>;
-            key-positions = <25 26>;
+        slack {
+            bindings = <&kp LA(NUMBER_4)>;
+            key-positions = <14 12>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        vscode {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <12 15>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        browser {
+            bindings = <&kp LA(NUMBER_2)>;
+            key-positions = <12 13>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
