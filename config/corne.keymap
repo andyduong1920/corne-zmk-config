@@ -24,7 +24,7 @@
 
         to-layer-mouse {
             bindings = <&to 1>;
-            key-positions = <1 36>;
+            key-positions = <36 25>;
             slow-release;
             layers = <0>;
             timeout-ms = <1000>;
@@ -66,9 +66,145 @@
             layers = <1>;
         };
 
-        quit_windown {
+        quit_app {
             bindings = <&kp LG(Q)>;
             key-positions = <1 37>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        close_window {
+            bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
+            key-positions = <37 2>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        refresh {
+            bindings = <&andy_press_hold_or_tap LA(NUMBER_6) LG(R)>;
+            key-positions = <37 4>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        select_all {
+            bindings = <&kp LG(A)>;
+            key-positions = <37 13>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        save {
+            bindings = <&kp LG(S)>;
+            key-positions = <37 14>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <37 25>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        lock {
+            bindings = <&kp LG(L)>;
+            key-positions = <37 38>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <36 1>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <36 2>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        capsLock {
+            bindings = <&kp CLCK>;
+            key-positions = <36 3>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0>;
+        };
+
+        search {
+            bindings = <&kp LG(F)>;
+            key-positions = <37 16>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        copy {
+            bindings = <&andy_press_hold_or_tap LG(LS(C)) LG(C)>;
+            key-positions = <37 27>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        paste {
+            bindings = <&andy_press_hold_or_tap LA(N5) LG(V)>;
+            key-positions = <37 28>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        home {
+            bindings = <&andy_press_hold_or_tap HOME UP_ARROW>;
+            key-positions = <37 5>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        end {
+            bindings = <&andy_press_hold_or_tap END DOWN_ARROW>;
+            key-positions = <37 17>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        back_and_forward {
+            bindings = <&andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
+            key-positions = <37 29>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        slack {
+            bindings = <&kp LA(NUMBER_4)>;
+            key-positions = <36 14>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        vscode {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <36 28>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
@@ -113,10 +249,10 @@
 
         mouse {
             bindings = <
-&none  &andy_press_hold_or_tap LG(L) ESCAPE      &andy_press_hold_or_tap LG(LS(W)) LG(W)     &kp TAB                                     &andy_press_hold_or_tap LA(NUMBER_6) LG(R)  &andy_press_hold_or_tap HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
-&none  &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(N5) LG(V)        &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
-                                                                                             &mkp RCLK                                   &mo 2                                       &mkp LCLK                                                     &none  &none  &none
+&none  &none           &none             &none                                       &andy_press_hold_or_tap LA(NUMBER_6) LG(R)  &andy_press_hold_or_tap HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)       &kp LC(F)         &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(N5) LG(V)        &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
+                                         &mkp RCLK                                   &mo 2                                       &mkp LCLK                                                     &none  &none  &none
             >;
 
             label = "mouse";
