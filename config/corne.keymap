@@ -65,6 +65,14 @@
             require-prior-idle-ms = <1000>;
             layers = <1>;
         };
+
+        quit_windown {
+            bindings = <&kp LG(Q)>;
+            key-positions = <1 37>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
     };
 
     behaviors {
@@ -96,10 +104,10 @@
 
         base {
             bindings = <
-&none  &kp Q                                 &kp W                                   &kp E                               &kp R                               &kp T        &kp Y    &kp U                               &kp I                               &kp O                                   &kp P                                    &none
-&none  &andy_press_hold_or_tap LEFT_SHIFT A  &andy_press_hold_or_tap LEFT_CONTROL S  &andy_press_hold_or_tap LEFT_ALT D  &andy_press_hold_or_tap LEFT_GUI F  &kp G        &kp H    &andy_press_hold_or_tap LEFT_GUI J  &andy_press_hold_or_tap LEFT_ALT K  &andy_press_hold_or_tap LEFT_CONTROL L  &andy_press_hold_or_tap LEFT_SHIFT SEMI  &none
-&none  &kp Z                                 &kp X                                   &kp C                               &kp V                               &kp B        &kp N    &kp M                               &kp COMMA                           &kp DOT                                 &kp FSLH                                 &none
-                                                                                     &kp LEFT_ALT                        &kp LGUI                            &kp SPACE    &kp RET  &kp BACKSPACE                       &none
+&none  &kp Q                                 &kp W                                   &kp E                               &kp R                               &kp T        &kp Y    &kp U                                            &kp I                               &kp O                                   &kp P                                    &none
+&none  &andy_press_hold_or_tap LEFT_SHIFT A  &andy_press_hold_or_tap LEFT_CONTROL S  &andy_press_hold_or_tap LEFT_ALT D  &andy_press_hold_or_tap LEFT_GUI F  &kp G        &kp H    &andy_press_hold_or_tap LEFT_GUI J               &andy_press_hold_or_tap LEFT_ALT K  &andy_press_hold_or_tap LEFT_CONTROL L  &andy_press_hold_or_tap LEFT_SHIFT SEMI  &none
+&none  &kp Z                                 &kp X                                   &kp C                               &kp V                               &kp B        &kp N    &kp M                                            &kp COMMA                           &kp DOT                                 &kp FSLH                                 &none
+                                                                                     &none                               &none                               &kp SPACE    &kp RET  &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none
             >;
         };
 
@@ -116,7 +124,7 @@
 
         mouse-2 {
             bindings = <
-&none  &kp LG(Q)       &kp W             &kp E                                            &kp R             &kp LG(T)        &none  &none  &none  &none  &none  &none
+&none  &none           &kp W             &kp E                                            &kp R             &kp LG(T)        &none  &none  &none  &none  &none  &none
 &none  &kp LEFT_ARROW  &kp LA(NUMBER_4)  &mt LA(NUMBER_3) LA(NUMBER_2)                    &none             &none            &none  &none  &none  &none  &none  &none
 &none  &to 0           &none             &none                                            &kp LA(NUMBER_1)  &kp LG(SLASH)    &none  &none  &none  &none  &none  &none
                                          &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none             &kp ENTER        &none  &none  &none
