@@ -341,7 +341,7 @@
 
         mouse-2 {
             bindings = <
-&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                           &trans  &kp LG(T)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
                         &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none   &kp ENTER    &trans  &trans  &trans
