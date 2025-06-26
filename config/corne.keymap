@@ -42,17 +42,15 @@
             bindings = <&bootloader>;
             key-positions = <29 4>;
             layers = <1>;
-            timeout-ms = <2000>;
-            require-prior-idle-ms = <1000>;
+            timeout-ms = <50>;
             slow-release;
         };
 
         bluetooth_reset {
             bindings = <&bt BT_CLR>;
             key-positions = <29 3>;
-            timeout-ms = <2000>;
+            timeout-ms = <50>;
             slow-release;
-            require-prior-idle-ms = <1000>;
             layers = <1>;
         };
 
@@ -62,27 +60,27 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <16 15>;
             layers = <1 0>;
-            timeout-ms = <5000>;
+            timeout-ms = <50>;
         };
 
         show_all_window {
             bindings = <&kp LC(DOWN_ARROW)>;
             key-positions = <14 15>;
             layers = <1 0>;
-            timeout-ms = <3000>;
+            timeout-ms = <50>;
         };
 
         search-all-vs-code {
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
             layers = <1 0>;
-            timeout-ms = <1300>;
+            timeout-ms = <20>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            timeout-ms = <1000>;
+            timeout-ms = <20>;
             slow-release;
             layers = <0 1>;
         };
@@ -90,10 +88,9 @@
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <25 26>;
-            timeout-ms = <1500>;
+            timeout-ms = <20>;
             slow-release;
             layers = <0 1>;
-            require-prior-idle-ms = <1000>;
         };
 
         // With 36 position
@@ -102,14 +99,12 @@
         to-layer-mouse {
             bindings = <&to 1>;
             key-positions = <36 25>;
-            slow-release;
             layers = <0>;
         };
 
         to_base_layout {
             bindings = <&to 0>;
             key-positions = <36 25>;
-            slow-release;
             layers = <1>;
         };
 
@@ -118,15 +113,13 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <36 5>;
-            slow-release;
             layers = <0>;
         };
 
         capsLock {
             bindings = <&kp CLCK>;
             key-positions = <27 12>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
@@ -135,15 +128,14 @@
         quit_app {
             bindings = <&kp LG(Q)>;
             key-positions = <37 1>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         close_window {
             bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
             key-positions = <37 2>;
-            timeout-ms = <1000>;
+            timeout-ms = <50>;
             slow-release;
             layers = <0 1>;
         };
@@ -151,7 +143,7 @@
         refresh {
             bindings = <&kp LG(R)>;
             key-positions = <37 4>;
-            timeout-ms = <1000>;
+            timeout-ms = <50>;
             slow-release;
             layers = <0 1>;
         };
@@ -159,7 +151,7 @@
         select_all {
             bindings = <&kp LG(A)>;
             key-positions = <37 13>;
-            timeout-ms = <1000>;
+            timeout-ms = <50>;
             slow-release;
             layers = <0 1>;
         };
@@ -167,15 +159,14 @@
         save {
             bindings = <&kp LG(S)>;
             key-positions = <37 14>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <37 25>;
-            timeout-ms = <1000>;
+            timeout-ms = <50>;
             slow-release;
             layers = <0 1>;
         };
@@ -183,104 +174,98 @@
         search {
             bindings = <&kp LG(F)>;
             key-positions = <37 16>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         copy {
             bindings = <&andy_press_hold_or_tap LG(LS(C)) LG(C)>;
             key-positions = <37 27>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <37 28>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         home {
             bindings = <&andy_press_hold_or_tap HOME UP_ARROW>;
             key-positions = <37 5>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         end {
             bindings = <&andy_press_hold_or_tap END DOWN_ARROW>;
             key-positions = <37 17>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         back_and_forward {
             bindings = <&andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
             key-positions = <37 29>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         recently_vs_code {
             bindings = <&kp LA(NUMBER_6)>;
             key-positions = <36 4>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         clipboard_history {
             bindings = <&kp LA(NUMBER_5)>;
             key-positions = <36 28>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         slack {
             bindings = <&kp LA(NUMBER_4)>;
             key-positions = <14 12>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         vscode {
             bindings = <&kp LA(NUMBER_1)>;
             key-positions = <12 15>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         browser {
             bindings = <&kp LA(NUMBER_2)>;
             key-positions = <12 13>;
-            timeout-ms = <1000>;
-            slow-release;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         vscode_changes {
             bindings = <&file_change_vscode>;
             key-positions = <27 28>;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         delete {
             bindings = <&andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE>;
             key-positions = <36 37>;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <37 38>;
+            timeout-ms = <50>;
             layers = <0 1>;
         };
     };
