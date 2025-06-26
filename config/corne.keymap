@@ -62,7 +62,8 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <16 15>;
             layers = <1 0>;
-            timeout-ms = <3000>;
+            timeout-ms = <1000>;
+            require-prior-idle-ms = <1300>;
         };
 
         show_all_window {
@@ -70,14 +71,14 @@
             key-positions = <14 15>;
             layers = <1 0>;
             timeout-ms = <1000>;
+            require-prior-idle-ms = <1300>;
         };
 
         search-all-vs-code {
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
             layers = <1 0>;
-            timeout-ms = <1000>;
-            require-prior-idle-ms = <1000>;
+            timeout-ms = <1300>;
         };
 
         esc {
