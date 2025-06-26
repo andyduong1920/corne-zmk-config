@@ -62,16 +62,14 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <16 15>;
             layers = <1 0>;
-            timeout-ms = <1000>;
-            require-prior-idle-ms = <1300>;
+            timeout-ms = <5000>;
         };
 
         show_all_window {
             bindings = <&kp LC(DOWN_ARROW)>;
             key-positions = <14 15>;
             layers = <1 0>;
-            timeout-ms = <1000>;
-            require-prior-idle-ms = <1300>;
+            timeout-ms = <3000>;
         };
 
         search-all-vs-code {
