@@ -23,8 +23,8 @@
         compatible = "zmk,combos";
 
         to-layer-mouse {
-            bindings = <&to 4>;
-            key-positions = <1 2>;
+            bindings = <&to 1>;
+            key-positions = <1 36>;
             slow-release;
             layers = <0>;
             timeout-ms = <1000>;
@@ -33,7 +33,7 @@
         bootloader {
             bindings = <&bootloader>;
             key-positions = <29 4>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <1000>;
             require-prior-idle-ms = <1000>;
             slow-release;
@@ -42,19 +42,19 @@
         show_all_app {
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <16 15>;
-            layers = <4>;
+            layers = <1 0>;
         };
 
         show_all_windown {
             bindings = <&kp LC(DOWN_ARROW)>;
             key-positions = <14 15>;
-            layers = <4>;
+            layers = <1 0>;
         };
 
         search-all-vs-code {
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
-            layers = <4>;
+            layers = <1 0>;
         };
 
         bluetooth_reset {
@@ -63,7 +63,7 @@
             timeout-ms = <1000>;
             slow-release;
             require-prior-idle-ms = <1000>;
-            layers = <0>;
+            layers = <1>;
         };
     };
 
@@ -99,34 +99,7 @@
 &none  &kp Q                                 &kp W                                   &kp E                               &kp R                               &kp T        &kp Y    &kp U                               &kp I                               &kp O                                   &kp P                                    &none
 &none  &andy_press_hold_or_tap LEFT_SHIFT A  &andy_press_hold_or_tap LEFT_CONTROL S  &andy_press_hold_or_tap LEFT_ALT D  &andy_press_hold_or_tap LEFT_GUI F  &kp G        &kp H    &andy_press_hold_or_tap LEFT_GUI J  &andy_press_hold_or_tap LEFT_ALT K  &andy_press_hold_or_tap LEFT_CONTROL L  &andy_press_hold_or_tap LEFT_SHIFT SEMI  &none
 &none  &kp Z                                 &kp X                                   &kp C                               &kp V                               &kp B        &kp N    &kp M                               &kp COMMA                           &kp DOT                                 &kp FSLH                                 &none
-                                                                                     &kp LEFT_ALT                        &kp LGUI                            &kp SPACE    &kp RET  &kp BACKSPACE                       &to 1
-            >;
-        };
-
-        symbols {
-            bindings = <
-&none  &kp N7        &kp N8        &kp KP_NUMBER_9  &mt RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES    &kp C_VOLUME_UP  &kp F2     &trans        &trans          &trans     &none
-&none  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SINGLE_QUOTE     &kp C_VOL_DN     &kp F1     &kp UNDER     &kp MINUS       &kp EQUAL  &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &mt RIGHT_BRACE LEFT_BRACE              &mt COMMA DOT        &kp LEFT         &kp RIGHT  &kp UP_ARROW  &kp DOWN_ARROW  &none      &none
-                                   &trans           &trans                                  &trans               &trans           &trans     &to 0
-            >;
-        };
-
-        utils {
-            bindings = <
-&none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_DOWN  &none    &none           &kp UP_ARROW    &none            &none  &none  &to 0
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none
-&none  &kp PAGE_DOWN   &kp PAGE_UP     &kp HOME         &kp END         &none    &none           &none           &none            &none  &none  &none
-                                       &none            &none           &none    &none           &none           &mo 3
-            >;
-        };
-
-        misc {
-            bindings = <
-&trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bootloader     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &to 4
-                                &trans  &trans  &trans    &trans  &trans  &trans
+                                                                                     &kp LEFT_ALT                        &kp LGUI                            &kp SPACE    &kp RET  &kp BACKSPACE                       &none
             >;
         };
 
@@ -135,7 +108,7 @@
 &none  &andy_press_hold_or_tap LG(L) ESCAPE      &andy_press_hold_or_tap LG(LS(W)) LG(W)     &kp TAB                                     &andy_press_hold_or_tap LA(NUMBER_6) LG(R)  &andy_press_hold_or_tap HOME UP_ARROW                         &none  &none  &none  &none  &none  &none
 &none  &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &none  &none  &none  &none  &none  &none
 &none  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(N5) LG(V)        &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &none  &none  &none  &none  &none  &none
-                                                                                             &mkp RCLK                                   &mo 5                                       &mkp LCLK                                                     &none  &none  &none
+                                                                                             &mkp RCLK                                   &mo 2                                       &mkp LCLK                                                     &none  &none  &none
             >;
 
             label = "^_~";
