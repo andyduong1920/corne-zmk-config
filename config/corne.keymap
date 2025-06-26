@@ -17,6 +17,20 @@
             bindings = <&kp LC(LS(S)) &kp LC(LS(Z))>;
             label = "FILE_CHANGE_VSCODE";
         };
+
+        git_status: git_status {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(GRAVE)) &kp G &kp S &kp T &kp ENTER>;
+            label = "GIT_STATUS";
+        };
+
+        git_push: git_push {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(GRAVE)) &kp G &kp G &kp P &kp U &kp S &kp H &kp ENTER>;
+            label = "GIT_PUSH";
+        };
     };
 
     combos {
@@ -250,6 +264,30 @@
             key-positions = <12 13>;
             timeout-ms = <1000>;
             slow-release;
+            layers = <0 1>;
+        };
+
+        vscode_changes {
+            bindings = <&file_change_vscode>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+        };
+
+        git_status {
+            bindings = <&git_status>;
+            key-positions = <17 14>;
+            layers = <0 1>;
+        };
+
+        git_push {
+            bindings = <&git_push>;
+            key-positions = <17 16>;
+            layers = <0 1>;
+        };
+
+        delete {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <36 37>;
             layers = <0 1>;
         };
     };
