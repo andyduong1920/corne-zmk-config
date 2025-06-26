@@ -274,7 +274,7 @@
         };
 
         delete {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE>;
             key-positions = <36 37>;
             layers = <0 1>;
         };
