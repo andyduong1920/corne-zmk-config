@@ -119,7 +119,7 @@
                                                                                              &mkp RCLK                                   &mo 2                                       &mkp LCLK                                                     &none  &none  &none
             >;
 
-            label = "^_~";
+            label = "mouse";
         };
 
         mouse-2 {
@@ -130,7 +130,7 @@
                                          &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none             &kp ENTER        &none  &none  &none
             >;
 
-            label = "^_^";
+            label = "mouse-2";
         };
     };
 };
