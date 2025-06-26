@@ -42,7 +42,7 @@
             bindings = <&bootloader>;
             key-positions = <29 4>;
             layers = <1>;
-            timeout-ms = <1000>;
+            timeout-ms = <2000>;
             require-prior-idle-ms = <1000>;
             slow-release;
         };
@@ -50,7 +50,7 @@
         bluetooth_reset {
             bindings = <&bt BT_CLR>;
             key-positions = <29 3>;
-            timeout-ms = <1000>;
+            timeout-ms = <2000>;
             slow-release;
             require-prior-idle-ms = <1000>;
             layers = <1>;
@@ -62,18 +62,24 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <16 15>;
             layers = <1 0>;
+            timeout-ms = <1000>;
+            require-prior-idle-ms = <1000>;
         };
 
         show_all_window {
             bindings = <&kp LC(DOWN_ARROW)>;
             key-positions = <14 15>;
             layers = <1 0>;
+            timeout-ms = <1000>;
+            require-prior-idle-ms = <1000>;
         };
 
         search-all-vs-code {
             bindings = <&kp LG(LS(F))>;
             key-positions = <16 28>;
             layers = <1 0>;
+            timeout-ms = <1000>;
+            require-prior-idle-ms = <1000>;
         };
 
         esc {
@@ -87,9 +93,10 @@
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <25 26>;
-            timeout-ms = <1000>;
+            timeout-ms = <1500>;
             slow-release;
             layers = <0 1>;
+            require-prior-idle-ms = <1000>;
         };
 
         // With 36 position
@@ -100,13 +107,11 @@
             key-positions = <36 25>;
             slow-release;
             layers = <0>;
-            timeout-ms = <1000>;
         };
 
         to_base_layout {
             bindings = <&to 0>;
             key-positions = <36 25>;
-            timeout-ms = <1000>;
             slow-release;
             layers = <1>;
         };
@@ -116,7 +121,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <36 5>;
-            timeout-ms = <1000>;
             slow-release;
             layers = <0>;
         };
@@ -230,7 +234,6 @@
         recently_vs_code {
             bindings = <&kp LA(NUMBER_6)>;
             key-positions = <36 4>;
-            timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
         };
@@ -238,7 +241,6 @@
         clipboard_history {
             bindings = <&kp LA(NUMBER_5)>;
             key-positions = <36 28>;
-            timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
         };
