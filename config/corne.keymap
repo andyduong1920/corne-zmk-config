@@ -56,6 +56,15 @@
             key-positions = <16 28>;
             layers = <4>;
         };
+
+        bluetooth_reset {
+            bindings = <&bt BT_CLR>;
+            key-positions = <29 25>;
+            timeout-ms = <1000>;
+            slow-release;
+            require-prior-idle-ms = <1000>;
+            layers = <0>;
+        };
     };
 
     behaviors {
