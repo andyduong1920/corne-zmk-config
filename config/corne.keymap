@@ -271,7 +271,7 @@
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp RCLK  &trans  &mkp LCLK    &trans  &trans  &trans
+                        &mkp RCLK  &mo 2   &mkp LCLK    &trans  &trans  &trans
             >;
 
             label = "mouse";
@@ -279,10 +279,10 @@
 
         mouse-2 {
             bindings = <
-&none  &none           &kp W             &kp E                                            &kp R             &kp LG(T)        &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_ARROW  &kp LA(NUMBER_4)  &mt LA(NUMBER_3) LA(NUMBER_2)                    &none             &none            &none  &none  &none  &none  &none  &none
-&none  &to 0           &none             &none                                            &kp LA(NUMBER_1)  &kp LG(SLASH)    &none  &none  &none  &none  &none  &none
-                                         &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none             &kp ENTER        &none  &none  &none
+&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                           &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE  &none   &kp ENTER    &trans  &trans  &trans
             >;
 
             label = "mouse-2";
