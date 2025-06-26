@@ -67,7 +67,7 @@
 
         to-layer-mouse {
             bindings = <&to 1>;
-            key-positions = <36 26>;
+            key-positions = <36 25>;
             slow-release;
             layers = <0>;
             timeout-ms = <1000>;
@@ -85,7 +85,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <36 2>;
+            key-positions = <36 17>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0>;
@@ -93,7 +93,7 @@
 
         capsLock {
             bindings = <&kp CLCK>;
-            key-positions = <36 3>;
+            key-positions = <36 27>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0>;
@@ -101,7 +101,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <36 1>;
+            key-positions = <1 2>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
@@ -126,7 +126,7 @@
         // With 37 position
 
         quit_app {
-            bindings = <&andy_press_hold_or_tap LG(L) LG(Q)>;
+            bindings = <&kp LG(Q)>;
             key-positions = <37 1>;
             timeout-ms = <1000>;
             slow-release;
@@ -142,7 +142,7 @@
         };
 
         refresh {
-            bindings = <&andy_press_hold_or_tap LA(NUMBER_6) LG(R)>;
+            bindings = <&kp LG(R)>;
             key-positions = <37 4>;
             timeout-ms = <1000>;
             slow-release;
@@ -216,6 +216,30 @@
         back_and_forward {
             bindings = <&andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
             key-positions = <37 29>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        recently_vs_code {
+            bindings = <&kp LA(NUMBER_6)>;
+            key-positions = <36 4>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        browser {
+            bindings = <&kp LA(NUMBER_2)>;
+            key-positions = <36 29>;
+            timeout-ms = <1000>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        lock {
+            bindings = <&kp LG(L)>;
+            key-positions = <25 26>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
