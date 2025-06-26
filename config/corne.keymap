@@ -135,6 +135,14 @@
 
         close_window {
             bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
+            key-positions = <2 3>;
+            timeout-ms = <500>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        close_window_2 {
+            bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
             key-positions = <37 2>;
             timeout-ms = <500>;
             slow-release;
@@ -142,6 +150,14 @@
         };
 
         refresh {
+            bindings = <&kp LG(R)>;
+            key-positions = <4 3>;
+            timeout-ms = <50>;
+            slow-release;
+            layers = <0 1>;
+        };
+
+        refresh_2 {
             bindings = <&kp LG(R)>;
             key-positions = <37 4>;
             timeout-ms = <50>;
