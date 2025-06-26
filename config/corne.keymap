@@ -126,7 +126,7 @@
         // With 37 position
 
         quit_app {
-            bindings = <&kp LG(Q)>;
+            bindings = <&andy_press_hold_or_tap LG(L) LG(Q)>;
             key-positions = <37 1>;
             timeout-ms = <1000>;
             slow-release;
@@ -168,14 +168,6 @@
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <37 25>;
-            timeout-ms = <1000>;
-            slow-release;
-            layers = <0 1>;
-        };
-
-        lock {
-            bindings = <&kp LG(L)>;
-            key-positions = <37 38>;
             timeout-ms = <1000>;
             slow-release;
             layers = <0 1>;
