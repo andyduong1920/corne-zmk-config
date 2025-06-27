@@ -379,10 +379,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &andy_mouse_tap_or_hold_layer 2 RCLK  &none   &mkp LCLK    &trans  &trans  &trans
+&trans  &none      &andy_press_hold_or_tap LG(LS(W)) LG(W)  &none                                    &none                                       &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(A)  &kp LG(S)                                &none                                    &kp LG(F)                                   &andy_press_hold_or_tap END DOWN_ARROW                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none      &none                                    &andy_press_hold_or_tap LG(LS(C)) LG(C)  &andy_press_hold_or_tap LA(NUMBER_5) LG(V)  &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                                            &andy_mouse_tap_or_hold_layer 2 RCLK     &mo 0                                       &mkp LCLK                                                     &trans  &trans  &trans
             >;
 
             label = "mouse";
