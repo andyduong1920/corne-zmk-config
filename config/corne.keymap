@@ -382,7 +382,7 @@
 &trans  &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &none                                       &none                                       &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(NUMBER_5) LG(V)  &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
-                                                                                              &andy_mouse_tap_or_hold_layer 2 RCLK        &mo 0                                       &mkp LCLK                                                     &trans  &trans  &trans
+                                                                                              &andy_mouse_tap_or_hold_layer 2 RCLK        &andy_mouse_tap_or_hold_layer 0 MCLK        &mkp LCLK                                                     &trans  &trans  &trans
             >;
 
             label = "mouse";
