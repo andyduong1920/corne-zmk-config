@@ -379,7 +379,7 @@
 
         mouse {
             bindings = <
-&trans  &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &kp TAB                                     &none                                       &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &kp TAB                                     &kp LC(N)                                   &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(NUMBER_5) LG(V)  &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
                                                                                               &andy_mouse_tap_or_hold_layer 2 RCLK        &kp LEFT_GUI                                &mkp LCLK                                                     &trans  &trans  &trans
