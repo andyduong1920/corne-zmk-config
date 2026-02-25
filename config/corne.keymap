@@ -57,14 +57,14 @@
         // Common
 
         show_all_app {
-            bindings = <&kp LC(UP_ARROW)>;
+            bindings = <&kp LG(NUMBER_2)>;
             key-positions = <16 15>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         show_all_window {
-            bindings = <&kp LC(DOWN_ARROW)>;
+            bindings = <&kp LG(NUMBER_1)>;
             key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <50>;
@@ -95,7 +95,6 @@
 
         // With 36 position
         /// Key combos
-
         // With 37 position
 
         quit_app {
@@ -281,10 +280,10 @@
 
         base {
             bindings = <
-                &trans &none &andy_press_hold_or_tap LG(LS(W)) LG(W) &none &kp LC(N) &andy_press_hold_or_tap HOME UP_ARROW &trans &trans &trans &trans &trans &trans
-                &kp TAB &andy_press_hold_or_tap LEFT_SHIFT LG(A) &andy_press_hold_or_tap LEFT_CONTROL LG(S) &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN &andy_press_hold_or_tap LEFT_GUI LG(F) &andy_press_hold_or_tap END DOWN_ARROW &trans &trans &trans &trans &trans &trans
-                &kp LEFT_SHIFT &kp LG(Z) &kp LC(F) &andy_press_hold_or_tap LG(LS(C)) LG(C) &andy_press_hold_or_tap LA(NUMBER_5) LG(V) &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET) &trans &trans &trans &trans &trans &trans
-                &mkp RCLK &kp LEFT_GUI &mkp LCLK &trans &trans &trans
+&trans          &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &none                                       &kp LC(N)                                   &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(NUMBER_5) LG(V)  &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
+                                                                                                      &mkp RCLK                                   &kp LEFT_GUI                                &mkp LCLK                                                     &trans  &trans  &trans
             >;
 
             label = "base";
