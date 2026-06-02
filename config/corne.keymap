@@ -49,9 +49,9 @@
         bluetooth_reset {
             bindings = <&bt BT_CLR>;
             key-positions = <29 3>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         // Common
@@ -80,186 +80,182 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
+            layers = <0>;
             timeout-ms = <20>;
             slow-release;
-            layers = <0>;
         };
 
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <25 26>;
+            layers = <0>;
             timeout-ms = <20>;
             slow-release;
-            layers = <0>;
         };
-
-        // With 36 position
-        /// Key combos
-        // With 37 position
 
         quit_app {
             bindings = <&kp LG(Q)>;
             key-positions = <37 1>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         close_window {
             bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
             key-positions = <2 3>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         close_window_2 {
             bindings = <&andy_press_hold_or_tap LG(LS(W)) LG(W)>;
             key-positions = <37 2>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         refresh {
             bindings = <&kp LG(R)>;
             key-positions = <4 3>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         refresh_2 {
             bindings = <&kp LG(R)>;
             key-positions = <37 4>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         select_all {
             bindings = <&kp LG(A)>;
             key-positions = <37 13>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         save {
             bindings = <&kp LG(S)>;
             key-positions = <37 14>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <37 25>;
+            layers = <0>;
             timeout-ms = <50>;
             slow-release;
-            layers = <0>;
         };
 
         search {
             bindings = <&kp LG(F)>;
             key-positions = <37 16>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         copy {
             bindings = <&andy_press_hold_or_tap LG(LS(C)) LG(C)>;
             key-positions = <37 27>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <37 28>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         home {
             bindings = <&andy_press_hold_or_tap HOME UP_ARROW>;
             key-positions = <37 5>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         end {
             bindings = <&andy_press_hold_or_tap END DOWN_ARROW>;
             key-positions = <37 17>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         back_and_forward {
             bindings = <&andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
             key-positions = <37 29>;
+            layers = <0>;
             timeout-ms = <500>;
             slow-release;
-            layers = <0>;
         };
 
         recently_vs_code {
             bindings = <&kp LA(NUMBER_6)>;
             key-positions = <36 4>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         clipboard_history {
             bindings = <&kp LA(NUMBER_5)>;
             key-positions = <36 28>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         slack {
             bindings = <&kp LA(NUMBER_4)>;
             key-positions = <14 12>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         vscode {
             bindings = <&kp LA(NUMBER_1)>;
             key-positions = <12 15>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         browser {
             bindings = <&kp LA(NUMBER_2)>;
             key-positions = <12 13>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         vscode_changes {
             bindings = <&file_change_vscode>;
             key-positions = <27 28>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         delete {
             bindings = <&andy_press_hold_or_tap LG(BACKSPACE) BACKSPACE>;
             key-positions = <36 37>;
-            timeout-ms = <500>;
             layers = <0>;
+            timeout-ms = <500>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <37 38>;
-            timeout-ms = <50>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
@@ -280,7 +276,7 @@
 
         base {
             bindings = <
-&trans          &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &andy_press_hold_or_tap LEFT_ALT PAGE_UP                                       &kp LC(N)                                   &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &none                                     &andy_press_hold_or_tap LG(LS(W)) LG(W)     &andy_press_hold_or_tap LEFT_ALT PAGE_UP    &kp LC(N)                                   &andy_press_hold_or_tap HOME UP_ARROW                         &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB         &andy_press_hold_or_tap LEFT_SHIFT LG(A)  &andy_press_hold_or_tap LEFT_CONTROL LG(S)  &andy_press_hold_or_tap LEFT_ALT PAGE_DOWN  &andy_press_hold_or_tap LEFT_GUI LG(F)      &andy_press_hold_or_tap END DOWN_ARROW                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LG(Z)                                 &kp LC(F)                                   &andy_press_hold_or_tap LG(LS(C)) LG(C)     &andy_press_hold_or_tap LA(NUMBER_5) LG(V)  &andy_press_hold_or_tap LG(RIGHT_BRACKET) LG(LEFT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
                                                                                                       &mkp RCLK                                   &kp LEFT_GUI                                &mkp LCLK                                                     &trans  &trans  &trans
